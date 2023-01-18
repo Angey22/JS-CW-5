@@ -1,20 +1,26 @@
 /*
  * call и apply
  */
-// const showThis = function (a, b, arr) {
-//     console.log(a, b, arr);
-//     console.log('showThis -> this', this);
-// };
+const showThis = function (a, b, arr) {
+    console.log(a, b, arr);
+    console.log('showThis -> this', this);
+};
 
-// showThis();
+showThis();
+console.log('-------------------------------------------');
 
-// const objA = {
-//     a: 5,
-//     b: 10,
-// };
+const objA = {
+    a: 5,
+    b: 10,
+};
 
-// showThis.call(objA, 5, 1, [100, 200, 300]);
-// showThis.apply(objA, [5, 1, [100, 200, 300]]);
+// Принудительный вызов функции "showThis" (с использованием метода - "call") в контексте объекта "objA". При использовании метода "call" можно передавать аргументы в функцию как независимые друг от друга значения - через запятую.
+showThis.call(objA, 5, 1, [100, 200, 300]);
+console.log('-------------------------------------------');
+
+// Принудительный вызов функции "showThis" (с использованием метода - "apply") в контексте объекта "objA". При использовании метода "apply" можно передавать аргументы функцию ТОЛЬКО как массив.
+showThis.apply(objA, [5, 1, [100, 200, 300]]);
+console.log('-------------------------------------------');
 
 // const objB = {
 //     x: 788,
@@ -48,6 +54,7 @@ const sweater = {
 /*
  * bind
  */
+// Позволяет сделать копию функции с привязанным контекстом.
 
 const changeHatColor = changeColor.bind(hat);
 const changeSweaterColor = changeColor.bind(sweater);
