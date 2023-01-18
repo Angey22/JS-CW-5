@@ -12,7 +12,11 @@ const counter = {
 
 const decrementBtn = document.querySelector('.js-decrement');
 const incrementBtn = document.querySelector('.js-increment');
+console.dir(incrementBtn)
 const valueEl = document.querySelector('.js-value');
+
+// Пример использования метода "textContent" встроенного в свойства тега - <button>
+// decrementBtn.textContent = 'akdsygkgsv DSBLSF';
 
 decrementBtn.addEventListener('click', function () {
     console.log('Кликнули на декремент');
@@ -30,4 +34,4 @@ incrementBtn.addEventListener('click', function () {
     valueEl.textContent = counter.value;
 });
 
-console.log(window);
+// console.log(window);
