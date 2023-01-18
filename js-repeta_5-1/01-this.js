@@ -130,11 +130,14 @@
 //     },
 // };
 
+// 1-й вопрос
 // book.showThis(); // Какой this ???
 
+// 2-й вопрос
 // const outerShowThis = book.showThis;
 // outerShowThis(); // Какой this ???
 
+// 3-й вопрос
 // const outerShowTitle = book.showTitle;
 // outerShowTitle(); // Какой this ???
 
@@ -160,6 +163,8 @@
 
 //     return sweater.updateColor;
 // };
+
+// makeChangeColor();
 
 // const swapColor = makeChangeColor();
 
@@ -209,4 +214,6 @@
 
 // updateCounter(10, counter.increment);
 // updateCounter(5, counter.decrement);
+
+// При передачи метода объекта как "колл-бек" - контекст НЕ сохраняется!!!
 
