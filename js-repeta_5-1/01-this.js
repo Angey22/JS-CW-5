@@ -316,7 +316,7 @@ const updateCounter = function (value, operation) {
 // counter.increment(10); // Раскомментируй и смотри консоль!
 // counter.decrement(5); // Раскомментируй и смотри консоль!
 
-// Продолжение этого примера - см. описание метода "bind".
+// Продолжение этого примера - см. описание метода "bind" в файле '02-fn-methods.js', видео - 1:27:34...1:29:53.
 
 console.groupEnd(); //! Log group end
 console.log('-11---------------------------------------------');

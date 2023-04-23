@@ -1,3 +1,5 @@
+//! Видео - 1:29:53...1:29:53
+
 const counter = {
     value: 0,
     increment() {
